@@ -1,0 +1,251 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1620px) {
+	.leftPromoution.leftPromoution{
+		top: 35px;
+	}
+	#fullpage .leftPromoution .promoutionMotto{
+		height: 295px;
+		width: 250px;
+		background: url(../img/promoutionBorder.png) center center no-repeat;
+		background-size: 230px;
+	}
+	#fullpage .leftPromoution .promoutionMotto h1{
+		font-family: "GothamBlack";
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding-left: 0;
+    padding-top: 90px;
+    padding-bottom: 20px;
+	}
+	#fullpage .leftPromoution .promoutionMotto .separator{
+		margin-bottom: 15px;
+		width: 190px;
+	}
+	#fullpage .leftPromoution .promoutionMotto p{
+		font-size: 16px;
+		padding-left: 0;
+	}
+	.night.night{
+		background-size: cover;
+	}
+	.day.day{
+		background-size: cover;
+	}
+	.promoSoc.promoSoc{
+		left: 81.5%;
+	}
+	.doubleModal {
+		left: 74% !important;
+		top: 60% !important;
+	}
+	#fullpage .contacts .phone h4{
+		padding-left: 30px;
+		text-align: left;
+	}
+	#fullpage .leftPromoution .promoutionInfo{
+		padding-left: 0;
+	}
+	#fullpage .textInfo h6{
+		padding-left: 0;
+		text-align: left;
+	}
+	#fullpage .textInfo p{
+		padding-left: 0;
+		text-align: left;
+	}
+	#fullpage .contacts .email p{
+		padding-left: 0;
+		text-align: left;
+	}
+}
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1200px) { /*992*/
+	/*
+	.singUp{ display:block; }
+	.doubleModal{ display:none; }
+	*/
+
+	.day{
+		display: none !important;
+	}
+	.night{
+		display: none !important;
+	}
+	#promoBody{
+		background-image: url(../img/night.png);
+		background-size: cover;
+	}
+	.sectionPromo.section{
+		background-color: transparent !important;
+	}
+	#promoBody .leftPromoution.leftPromoution{
+		position: relative;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: block;
+	}
+	#promoBody #fullpage .leftPromoution .promoutionMotto{
+		position: relative;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: block;
+	}
+	#promoBody #fullpage .leftPromoution .promoutionMotto .separator{
+		margin: 0 auto;
+	}
+	#fullpage .leftPromoution .promoutionInfo{
+		margin: 0 auto;
+	}
+	
+	#fullpage .doubleModal{
+		position: relative;
+		width: 100%;
+		left: 50%;
+		margin-left:-150px;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: block;
+		padding-top: 30px;
+	}
+
+	#fullpage .promoSoc.promoSoc{
+		position: relative;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: block;
+		padding:30px 0px;
+		margin: 30px 0px;
+	}
+	#promoBody #fullpage .leftPromoution .promoutionMotto h1{
+		text-align: none;
+		padding-right: 65px;
+		padding-top: 155px;
+	}
+	#promoBody #fullpage .singUp.singUp{
+		margin-top: 40px;
+		margin-bottom: 40px;
+		margin-left: 35%;
+	}
+	#promoBody #fullpage .leftPromoution .promoutionMotto p{
+		font-size: 23px;
+    padding-right: 45px;
+    padding-top: 30px;
+	}
+	#promoBody #fullpage .leftPromoution .promoutionMotto{
+    height: 450px;
+    width: 100%;
+    background: url(../img/promoutionBorder.png) center center no-repeat
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	html,body{
+		overflow: auto !important;
+		min-height: 100% !important;
+		height: initial !important;
+	}
+	/*
+	.singUp{ display:block; }
+	.doubleModal{ display:none; }
+	*/
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.promoutionInfo{
+		padding:10px !important;
+		margin: 0 auto !important;
+	}
+	.textInfo{
+		max-width: 90% !important;
+	}
+	.contacts{
+		max-width: 90% !important;
+	}
+	.contacts .phone h4{
+		font-size: 28px !important;
+	}
+	.email p{
+		font-size: 20px !important;
+	}
+	.doubleModal button span{
+		font-size: 20px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

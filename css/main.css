@@ -1,0 +1,2380 @@
+a:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+html.js .loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 600px;
+  width: 600px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 35%;
+  top: 15%;
+  position: absolute;
+}
+
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+a:hover, a:hover, a:focus {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: 0;
+}
+
+/****************Day&NightEffect***********************/
+#fullpage.active {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+          transform: none !important;
+}
+
+.day {
+  -moz-transition: all 3s ease-in-out;
+  margin: 0 auto;
+  white-space: nowrap;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  background: url(../img/day.png) no-repeat fixed top center;
+  font-size: 0;
+}
+
+.day.active {
+  background: url(../img/night.png) no-repeat fixed top center;
+}
+
+.night {
+  width: 100%;
+  height: 1000px;
+  display: inline-block;
+  transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  background: url(../img/day.png) no-repeat fixed top center;
+}
+
+.night.active {
+  transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  opacity: 1;
+  width: 120px !important;
+  background: url(../img/day.png) no-repeat fixed top center;
+}
+
+.night.mozilaFix {
+  width: 120px !important;
+}
+
+.night:hover {
+  transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  opacity: 0;
+}
+
+.night.active:hover {
+  transition: all 0s linear !important;
+  -moz-transition: all 0s linear !important;
+  opacity: 0;
+}
+
+.night.focus {
+  opacity: 0;
+}
+
+/*************FixedHeader**************************/
+.headerFixed {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+.headerFixed .headerBord {
+  width: 1150px;
+  height: 75px;
+  margin: 0 auto;
+}
+
+.headerLeft {
+  width: 475px;
+  height: 75px;
+  background-color: #cfd600;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+
+.headerRight {
+  width: 475px;
+  height: 75px;
+  background-color: #cfd600;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+
+.headerCenter {
+  width: 193px;
+  height: 135px;
+  background: url(../img/sonataLogo.png) center center no-repeat;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+
+.headerLocation {
+  background: url(../img/locationIco.png) left center no-repeat;
+  height: 45px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 35px;
+  width: 41%;
+  margin-right: 23px;
+}
+
+.headerLocation p {
+  font-size: 15px;
+  color: #29292a;
+  font-family: "GothamRegular";
+  padding-left: 45px;
+  border-right: 1px solid #a3aa2d;
+}
+
+.headerPhone {
+  height: 45px;
+  display: inline-block;
+  width: 45%;
+}
+
+.headerPhone p {
+  font-family: "GothamRegular";
+  font-size: 20px;
+  color: #29292a;
+  letter-spacing: 1.3px;
+}
+
+.headerPhone p span {
+  font-size: 16px;
+}
+
+.callbackBlock {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.callback {
+  background: url(../img/callback.png) left center no-repeat;
+  background-position: 0 -3px;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 60px;
+}
+
+.callback:hover {
+  background-position: 0 -73px;
+}
+
+.callback p {
+  font-family: "GothamMedium";
+  font-size: 10px;
+  color: #29292a;
+  text-transform: uppercase;
+  padding-left: 40px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+.socBut {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  padding-left: 30px;
+}
+
+.socBut .vk {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url(../img/vk.png) no-repeat;
+  background-position: 0px 0px;
+  margin-right: 5px;
+}
+
+.socBut .vk:hover {
+  background-position: 0px -59px;
+}
+
+.socBut .fb {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url(../img/fb.png) no-repeat;
+  background-position: 0px 0px;
+  margin-right: 5px;
+}
+
+.socBut .fb:hover {
+  background-position: 0px -59px;
+}
+
+.socBut .tw {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url(../img/tw.png) no-repeat;
+  background-position: 0px 0px;
+  margin-right: 5px;
+}
+
+.socBut .tw:hover {
+  background-position: 0px -57px;
+}
+
+.dropDownOpen {
+  transition: .5s;
+  display: inline-block;
+  float: right;
+  height: 75px;
+  position: absolute;
+  margin-left: 8.4px;
+}
+
+.dropDownOpen:hover {
+  background: #21290e;
+}
+
+.leftPart {
+  float: left;
+}
+
+.dropDownOpen.active {
+  margin-left: 5px;
+  background: #21290e;
+  position: absolute;
+  width: 205px;
+}
+
+.menu-icon-wrapper.active {
+  margin-left: 80px;
+}
+
+.dummy__item a.active {
+  background: url(../img/point.png) 6% center no-repeat;
+  background-size: 6px;
+  color: #cfd600;
+}
+
+.dummy__item a {
+  font-family: "GothamBold";
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  padding-left: 30px;
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 20px;
+}
+
+.dummy__item a:hover {
+  background: url(../img/point.png) 6% center no-repeat;
+  background-size: 6px;
+  color: #cfd600;
+}
+
+/*******************MobileMenu********************/
+.mainMobileMenu {
+  display: none;
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #cfd600;
+}
+
+.mainMobileMenu .menuOpen {
+  float: right;
+  padding-right: 20px;
+}
+
+.mainMobileMenu .menuOpen span {
+  font-family: "GothamMedium";
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  color: #29292a;
+  position: relative;
+  bottom: 12px;
+  transition: .4s;
+}
+
+.mainMobileMenu .menuOpen .menuTitle.active {
+  color: white;
+}
+
+.mainMobileMenu .menuOpen .openMenuBtn {
+  display: inline-block;
+  background: url(../img/openNav.png) center center no-repeat;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  transition: .4s;
+}
+
+.mainMobileMenu .menuOpen .openMenuBtn.active {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+          transform: rotate3d(0, 1, 0, -180deg);
+  background: url(../img/openNav2.png) center center no-repeat;
+  background-size: 45px;
+}
+
+.homeButton {
+  height: 64px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(../img/sonataLogo.png) no-repeat;
+  width: 95px;
+  float: left;
+  background-size: 95px;
+}
+
+.dropMobileMenu {
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  margin-right: -270px;
+  transition: .5s;
+  overflow-y: auto;
+}
+
+.dropMobileMenu .closeMenuBtn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/openNav2.png) center center no-repeat;
+  background-size: 45px;
+  position: relative;
+  top: 3px;
+  transition: 1.1s;
+}
+
+.dropMobileMenu .links .socBut {
+  padding-top: 20px;
+  padding-left: 55px;
+}
+
+.dropMobileMenu .links .socBut .vk {
+  background-position: 0px -59px;
+}
+
+.dropMobileMenu .links .socBut .fb {
+  background-position: 0px -59px;
+}
+
+.dropMobileMenu .links .socBut .tw {
+  background-position: 0px -57px;
+}
+
+.dropMobileMenu .dropNav {
+  display: block;
+  width: 100%;
+  font-family: "GothamLight";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 30px;
+  padding-top: 20px;
+  transition: .5s;
+}
+
+.dropMobileMenu .dropNav:hover {
+  color: #cfd600;
+}
+
+.dropMobileMenu .dropNav.active {
+  color: #cfd600;
+}
+
+.menuClose .menuTitle {
+  font-family: "GothamMedium";
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  bottom: 12px;
+  transition: .4s;
+  padding-left: 30px;
+  padding-right: 80px;
+}
+
+.mobileNavig {
+  padding-top: 80px;
+}
+
+.dropMobileMenu.active {
+  margin-right: 0 !important;
+}
+
+.closeMenuBtn.active {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+          transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.leftPromo {
+  position: absolute;
+  width: 370px;
+  height: 390px;
+  background: url(../img/promoutionBorder.png) no-repeat;
+  z-index: 10000;
+  top: 20%;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.leftPromo .promoName {
+  font-family: "GothamBlack";
+  font-size: 72px;
+  color: white;
+  line-height: 70px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.leftPromo .separator {
+  width: 285px;
+  height: 5px;
+  background-color: #cfd600;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: -30px;
+}
+
+.leftPromo .promoText {
+  font-family: gothamRegular;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.leftNavigation {
+  position: fixed;
+  width: 250px;
+  height: auto;
+  z-index: 99999;
+  top: 65%;
+  margin-left: 0;
+}
+
+.leftNavigation .mainNav {
+  display: block;
+  font-family: "GothamMedium";
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  background: url(../img/dot.png) right center no-repeat;
+  padding-left: 35px;
+}
+
+.leftNavigation .mainNav:hover {
+  background: url(../img/navArrow.png) left center no-repeat, url(../img/rightNavArrow.png) right center no-repeat;
+  color: #cfd600;
+}
+
+.leftNavigation {
+  transition: 1s;
+}
+
+.leftNavigation.active {
+  top: 40% !important;
+}
+
+#section1 {
+  background: url(../img/mapBack.jpg) no-repeat;
+  background-size: cover;
+}
+
+.mapCloud {
+  background: url(../img/clouds.png) no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mapWrapper {
+  padding-top: 160px;
+  padding-left: 385px;
+  padding-right: 110px;
+}
+
+.leftText {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  z-index: 50;
+}
+
+.leftText .leftTextTitle {
+  background: url(../img/planBord.png) no-repeat;
+  display: block;
+  font-family: "GothamBold";
+  font-size: 14px;
+  color: white;
+  letter-spacing: 2px;
+  padding-left: 114px;
+  height: 50px;
+  padding-top: 6px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.leftText .leftTextTitle:hover {
+  letter-spacing: 4px;
+}
+
+.rightText {
+  width: 49%;
+  display: inline-block;
+  position: relative;
+  z-index: 50;
+}
+
+.rightText .rightInfoBlock {
+  background: url(../img/infoIcon.png) left top no-repeat;
+  height: auto;
+  display: block;
+  padding-left: 50px;
+  font-family: "GothamMedium";
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.leftNavigationWrap {
+  position: fixed;
+  height: 100%;
+  width: 1px;
+  z-index: 9999;
+  margin-left: 15px;
+  transition: .5s;
+  border-left: 1px solid transparent;
+}
+
+.leftNavigationWrap.active {
+  border-left: 2px solid #cfd600;
+}
+
+#section1 .fp-tableCell {
+  display: block;
+}
+
+#section2 .fp-tableCell {
+  display: block;
+}
+
+.mapTitle {
+  font-family: "GothamBlack";
+  text-transform: uppercase;
+  font-size: 45px;
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 0;
+  line-height: 60px;
+}
+
+.housesBlock {
+  background: url("../img/houses.png") center center no-repeat;
+  width: 100%;
+  height: 510px;
+}
+
+.houseNum {
+  transition: .5s;
+  font-family: "MullerBlack";
+  font-size: 120px;
+  color: white;
+  margin-top: 0;
+  line-height: 108px;
+  margin-bottom: 0;
+}
+
+.housesBlock {
+  background-size: contain;
+}
+
+.housesBlock .separator {
+  width: 145px;
+  height: 2px;
+  background-color: #cfd600;
+  display: block;
+  position: relative;
+  right: 10px;
+}
+
+.housesBlock .houseTitle {
+  font-family: "MullerBlack";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #cfd600;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.firstHouse {
+  position: relative;
+  z-index: 50;
+  transition: 2s;
+  padding-top: 190px;
+  padding-left: 16%;
+  display: inline-block;
+  padding-right: 13%;
+  cursor: pointer;
+}
+
+.firstHouse:hover .houseNum {
+  color: #cfd600;
+}
+
+.secondHouse {
+  position: relative;
+  z-index: 50;
+  transition: 1s;
+  padding-left: 8%;
+  padding-right: 13%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.secondHouse:hover .houseNum {
+  color: #cfd600;
+}
+
+.thirdHouse {
+  position: relative;
+  z-index: 50;
+  transition: 1s;
+  padding-left: 8%;
+  padding-right: 0px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.thirdHouse:hover .houseNum {
+  color: #cfd600;
+}
+
+#section3 {
+  background: url(../img/developerBack.png) no-repeat;
+  background-size: cover;
+}
+
+#section2 {
+  background: url(../img/dignityback.png) no-repeat !important;
+  background-size: cover;
+}
+
+#section4 {
+  background: url(../img/shareBack.png) no-repeat;
+  background-size: cover;
+}
+
+.mainNav.active {
+  background: url(../img/navArrow.png) left center no-repeat, url(../img/rightNavArrow.png) right center no-repeat;
+  color: #cfd600;
+}
+
+.mainNav:focus {
+  outline: none;
+}
+
+#section3 .fp-tableCell {
+  display: block;
+}
+
+#section4 .fp-tableCell {
+  display: block;
+}
+
+.developerWrapper {
+  background: url(../img/developerWrap.png) center no-repeat;
+  height: 565px;
+  width: 1185px;
+}
+
+.developerWrapper .developerText {
+  font-family: "GothamRegular";
+  font-size: 14px;
+  color: #515151;
+  letter-spacing: 1.3px;
+}
+
+.developerTextWrapper {
+  padding-top: 80px;
+  padding-left: 60px;
+  padding-right: 100px;
+}
+
+.signView {
+  transition: .5s;
+  display: block;
+  width: 265px;
+  height: 45px;
+  background-color: #cfd600;
+  text-transform: uppercase;
+  font-family: "GothamMedium";
+  font-size: 13px;
+  color: #515151;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding-top: 12px;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.signView:hover {
+  letter-spacing: 2px;
+}
+
+.signViewWrap {
+  transition: .5s;
+  display: block;
+  width: 280px;
+  height: 60px;
+  border: 2px solid #cfd600;
+  margin-top: 115px;
+}
+
+.signViewWrap:hover {
+  background-color: #cfd600;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shareWrapper #owl-demo {
+  padding-top: 70px !important;
+  padding-right: 35px !important;
+  background: url(../img/slide3Back.png) right center no-repeat;
+}
+
+.wrapperCarousel {
+  position: absolute;
+  background: url(../img/slide3Back.png) right center no-repeat;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.shareWrapper {
+  width: 1200px;
+  height: 600px;
+  cursor: pointer;
+}
+
+.shareWrapper .owl-theme .owl-controls .owl-page span {
+  border-radius: 0;
+  background-color: transparent;
+  margin: 6px 6px;
+}
+
+.shareWrapper .owl-theme .owl-controls {
+  text-align: left;
+}
+
+.shareWrapper .owl-buttons {
+  display: none;
+}
+
+.shareWrapper .owl-theme .owl-controls .owl-page.active {
+  background-color: transparent;
+  border: 1px solid #cfd600;
+}
+
+.shareWrapper .owl-theme .owl-controls .owl-page.active span {
+  background-color: #cfd600;
+}
+
+.shareWrapper .owl-theme .owl-controls .owl-page {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.shareWrapper .owl-theme .owl-controls .owl-page {
+  margin-right: 12px;
+}
+
+.owl-carousel img {
+  cursor: pointer !important;
+}
+
+.moreBtn {
+  transition: .5s;
+  display: block;
+  position: relative;
+  z-index: 10000;
+  width: 135px;
+  height: 40px;
+  border: 3px solid #baa08b;
+  background-color: white;
+  font-family: "GothamLight";
+  font-size: 12px;
+  color: #baa08b;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding-top: 8px;
+  bottom: 80px;
+  left: 65px;
+}
+
+.moreBtn:hover {
+  color: #baa08b;
+  letter-spacing: 2.5px;
+  background-color: #baa08b;
+  color: white;
+}
+
+#section4 .owl-theme .owl-controls {
+  margin-top: 0;
+  position: relative;
+  bottom: 25px;
+}
+
+.dignityItem {
+  display: inline-block;
+  margin-right: 30px;
+  width: 230px;
+  height: 300px;
+  background: url(../img/dignityItem.png) center center no-repeat;
+}
+
+.dignityItem:hover {
+  background: url(../img/dignityItemHover.png) center center no-repeat;
+}
+
+.dignityItem .separator {
+  background-color: #928f31;
+  width: 110px;
+  height: 3px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 95px;
+}
+
+.dignityItem .bottomSeparator {
+  background-color: #928f31;
+  width: 70px;
+  height: 3px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -5px;
+  bottom: 10px;
+}
+
+.dignityIcons {
+  width: 110px;
+  height: 50px;
+  background: url(../img/dignityIcons1.png) center center no-repeat;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+}
+
+.dignityTitle {
+  font-family: "GothamMedium";
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.dignityName {
+  padding-top: 90px;
+  text-align: center;
+}
+
+.dignityWrap {
+  text-align: center;
+  width: 900px;
+  margin-left: 100px;
+}
+
+.dignityIcons2.dignityIcons {
+  background: url(../img/dignityIcons2.png) center center no-repeat !important;
+}
+
+.dignityIcons3.dignityIcons {
+  background: url(../img/dignityIcons3.png) center center no-repeat !important;
+}
+
+.dignityIcons4.dignityIcons {
+  background: url(../img/dignityIcons4.png) center center no-repeat !important;
+}
+
+.dignityIcons5.dignityIcons {
+  background: url(../img/dignityIcons5.png) center center no-repeat !important;
+}
+
+.correctOrientation {
+  font-family: "GothamLight";
+  font-size: 25px;
+  text-align: center;
+}
+
+.orientationPic {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background: url(../img/landscape.png) center center no-repeat;
+  background-size: contain;
+}
+
+.planHead {
+  height: 380px;
+  width: 100%;
+  background: url(../img/planBack.png) center center no-repeat;
+}
+
+.planTitleText {
+  transition: 1s;
+  background: url(../img/BorderTitle.png) 0 center no-repeat;
+  margin-top: 0;
+  font-family: "GothamBlack";
+  font-size: 48px;
+  color: white;
+  letter-spacing: 2px;
+  padding-left: 130px;
+  text-transform: uppercase;
+}
+
+.planTitleWrapper {
+  cursor: pointer;
+  padding-top: 205px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.planTitleWrapper:hover .planTitleText {
+  padding-left: 150px;
+}
+
+.planTitleWrapper:hover .separator {
+  left: 145px;
+  width: 390px;
+}
+
+.planChoose {
+  background-color: #2a2a2a;
+}
+
+.chooseKv {
+  margin-top: 110px;
+  height: 470px;
+  width: 420px;
+  background: url(../img/chooseKv.png) left center no-repeat;
+  background-size: contain;
+}
+
+.chooseKv:hover .separator {
+  margin-left: 40px;
+}
+
+.chooseKv:hover .chooseKvTitle {
+  padding-left: 120px;
+}
+
+.planHead .separator {
+  transition: 1s;
+  width: 270px;
+  height: 5px;
+  display: block;
+  background-color: #cfd600;
+  position: relative;
+  top: 53px;
+  cursor: pointer;
+  left: 0;
+}
+
+.kvNum {
+  font-family: "GothamLight";
+  font-size: 24px;
+  color: #cfd600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 160px;
+  position: relative;
+  bottom: 6px;
+}
+
+.chooseKvTitle {
+  transition: .5s;
+  font-family: "GothamBlack";
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 40px;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+.chooseKvTitle span {
+  font-size: 30px;
+}
+
+.chooseKv .separator {
+  transition: .5s;
+  width: 285px;
+  height: 2px;
+  display: block;
+  background-color: #cfd600;
+  margin-left: 55px;
+  margin-bottom: 30px;
+}
+
+.kvDetails {
+  font-family: "GothamRegular";
+  font-size: 14px;
+  color: #7b7b7b;
+  letter-spacing: 1.5px;
+  padding-left: 100px;
+}
+
+.kvMapTop .kvMapLeft {
+  transition: 1s;
+  display: inline-block;
+  width: 210px;
+  height: 306px;
+  background: url(../img/topleft.png) no-repeat;
+  float: left;
+}
+
+.kvMapTop .kvMapLeft:hover {
+  background: url(../img/topLeftActive.png) no-repeat !important;
+}
+
+.kvMapTop .kvMapLeft:hover .homeNumPlan {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.kvMapTop .kvMapLeft .homeNumPlan.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.kvMapTop .kvMapLeft .homeNumPlan.activeR {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.kvMapTop .kvMapRight .homeNumPlan.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.kvMapTop .kvMapRight .homeNumPlan.activeR {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.kvMapBottom .kvMapLeft .homeNumPlan.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.kvMapBottom .kvMapLeft .homeNumPlan.activeR {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.kvMapBottom .kvMapRight .homeNumPlan.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.kvMapBottom .kvMapRight .homeNumPlan.activeR {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.kvMapTop .kvMapRight {
+  transition: 1s;
+  display: inline-block;
+  width: 210px;
+  height: 306px;
+  background: url(../img/topRight.png) no-repeat;
+  float: left;
+}
+
+.kvMapTop .kvMapRight:hover {
+  background: url(../img/topRightActive.png) no-repeat !important;
+}
+
+.kvMapTop .kvMapRight:hover .homeNumPlan {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.kvMapBottom .kvMapLeft {
+  transition: 1s;
+  display: inline-block;
+  width: 210px;
+  height: 306px;
+  background: url(../img/bottomLeft.png) no-repeat;
+  float: left;
+}
+
+.kvMapBottom .kvMapLeft:hover {
+  background: url(../img/bottomLeftActive.png) no-repeat !important;
+}
+
+.kvMapBottom .kvMapLeft:hover .homeNumPlan {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.kvMapTop {
+  display: block;
+  width: 100%;
+  height: 306px;
+}
+
+.kvMapBottom {
+  display: block;
+  width: 100%;
+  height: 306px;
+}
+
+.kvMapBottom .kvMapRight {
+  transition: 1s;
+  display: inline-block;
+  width: 210px;
+  height: 306px;
+  background: url(../img/bottomRight.png) no-repeat;
+  float: left;
+}
+
+.kvMapBottom .kvMapRight:hover {
+  transition: 1s;
+  background: url(../img/bottomRightActive.png) no-repeat !important;
+}
+
+.kvMapBottom .kvMapRight:hover .homeNumPlan {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.homeNumPlan {
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  top: 50px;
+  right: 115px;
+}
+
+.homeNumPlan .homeNumTitle {
+  font-family: "GothamRegular";
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.homeNumPlan .homeNum {
+  font-family: "GothamRegular";
+  font-size: 36px;
+  color: white;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.homeNumPlan .homeNum span {
+  font-size: 24px;
+  color: #cfd600;
+}
+
+.homeNumPlan .separator {
+  display: block;
+  width: 160px;
+  height: 6px;
+  background: url(../img/mapSeparator.png) center center no-repeat;
+}
+
+.homeNumPlanBot.homeNumPlan {
+  top: 122px !important;
+}
+
+.homeNumPlanRight.homeNumPlan {
+  left: 185px !important;
+  right: 0 !important;
+  text-align: right !important;
+  padding-right: 50px !important;
+}
+
+.homeNumPlanRight.homeNumPlan .separator {
+  background: url(../img/separatorRight.png) center center no-repeat !important;
+}
+
+.kvMap {
+  padding-left: 150px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.footer {
+  height: auto;
+  background-color: #1e1e1e;
+}
+
+.jkFoot {
+  padding-top: 15px;
+  font-family: "GothamRegular";
+  font-size: 10px;
+  color: #aeaeae;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.jkFoot span {
+  color: #cfd600;
+}
+
+.kamStudio {
+  transition: .5s;
+  padding-top: 25px;
+  font-family: "GothamRegular";
+  font-size: 10px;
+  color: #aeaeae;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  top: 0;
+  display: block;
+}
+
+.kamStudio span {
+  color: #cfd600;
+}
+
+.mapEl1.active {
+  transition: .5s;
+  background: url(../img/topLeftActive.png) no-repeat;
+  -webkit-animation-name: activeEl;
+          animation-name: activeEl;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.mapEl2.active {
+  transition: .5s;
+  background: url(../img/topRightActive.png) no-repeat;
+  -webkit-animation-name: activeEl;
+          animation-name: activeEl;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.mapEl3.active {
+  transition: .5s;
+  background: url(../img/bottomLeftActive.png) no-repeat;
+  -webkit-animation-name: activeEl;
+          animation-name: activeEl;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.mapEl4.active {
+  transition: .5s;
+  background: url(../img/bottomRightActive.png) no-repeat;
+  -webkit-animation-name: activeEl;
+          animation-name: activeEl;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.mapEl4.activeR.active {
+  transition: 1s;
+  background: url(../img/bottomRight.png) no-repeat;
+}
+
+.mapEl3.activeR.active {
+  transition: 1s;
+  background: url(../img/bottomLeft.png) no-repeat;
+}
+
+.mapEl2.activeR.active {
+  transition: 1s;
+  background: url(../img/topRight.png) no-repeat;
+}
+
+.mapEl1.activeR.active {
+  transition: 1s;
+  background: url(../img/topleft.png) no-repeat;
+}
+
+.backChoose a {
+  display: inline-block;
+  font-family: "GothamRegular";
+  font-size: 10px;
+  color: #aeaeae;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 0;
+  height: 40px;
+  width: 100%;
+  margin-top: 50px;
+  transition: .5s;
+}
+
+.backChoose a:hover {
+  letter-spacing: 3px;
+}
+
+.backChoose a:hover span {
+  background-position: -75px 0px;
+}
+
+.backChoose a span {
+  background: url(../img/chooseArrow.png) 0px 0px no-repeat;
+  height: 25px;
+  display: inline-block;
+  width: 25px;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+}
+
+.homeShowInfo {
+  background: url(../img/borderVPlan.png) no-repeat;
+  height: 700px;
+  margin-top: 35px;
+}
+
+.homeShowPlN {
+  font-family: "GothamLight";
+  font-size: 18px;
+  color: #cfd600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 60px;
+}
+
+.homeShowPlN span {
+  color: white;
+  letter-spacing: 4px;
+}
+
+.showPlanWrap {
+  padding-left: 100px;
+}
+
+.showPlanWrap .separator {
+  width: 365px;
+  height: 2px;
+  background-color: #cfd600;
+  display: block;
+  position: relative;
+  right: 20px;
+  margin-bottom: 30px;
+}
+
+.showPlanWrap ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.showPlanWrap ul li {
+  font-family: "GothamRegular";
+  font-size: 15px;
+  color: #d6d6d6;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.showPlanWrap ul li span {
+  font-size: 15px;
+  color: #5a5a5a;
+}
+
+.showPlanWrap ul li span .sqr2 {
+  font-size: 8px;
+  position: relative;
+  bottom: 6px;
+}
+
+.showPlanWrap .listWithNum {
+  list-style-type: decimal;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+.showPlanWrap h2 {
+  font-family: "GothamBlack";
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.showPlanWrap h2 span {
+  font-size: 30px;
+}
+
+.listWithOutNum.col-sm-8.col-md-6 {
+  padding-left: 0;
+}
+
+.separatorGrey {
+  width: 365px;
+  height: 2px;
+  background-color: #5a5a5a;
+  display: block;
+  position: relative;
+  right: 35px;
+  margin-bottom: 0px;
+}
+
+.listMeters {
+  padding-top: 10px;
+}
+
+.floorSwitch {
+  width: 205px;
+  height: 40px;
+  border-bottom: 2px solid #cfd600;
+  float: right;
+  margin-top: 50px;
+}
+
+.floorSwitch span {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "GothamLight";
+  color: #cfd600;
+  padding-right: 28px;
+}
+
+.floorSwitch .floor {
+  cursor: pointer;
+  transition: .5s;
+  display: inline-block;
+  width: 65.02px;
+  height: 40px;
+  font-family: "GothamMedium";
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  border-bottom: 6px solid transparent;
+}
+
+.floorSwitch .floor:hover {
+  border-bottom: 6px solid #cfd600;
+}
+
+.floorSwitch .floor.active {
+  transition: .5s;
+  border-bottom: 6px solid #cfd600 !important;
+}
+
+.firstFloorMap {
+  width: 365px;
+  height: 535px;
+  float: right;
+  margin-top: 80px;
+}
+
+.planShow.planChoose {
+  padding-bottom: 50px;
+}
+
+.postPic {
+  height: 300px;
+  width: 300px;
+  background: url(../img/borderBlog.png) no-repeat;
+  display: block;
+}
+
+.postPic img {
+  max-width: 360px;
+  padding-top: 25px;
+  padding-left: 25px;
+  max-height: 300px;
+}
+
+.postData {
+  font-size: 12px;
+  font-family: "GothamBold";
+  color: #cfd600;
+  letter-spacing: 2.3px;
+  margin-bottom: 0px;
+}
+
+.postTitle {
+  font-family: "GothamBlack";
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 40px;
+  position: relative;
+  bottom: 7px;
+  margin-bottom: 10px;
+}
+
+.elementsArrow {
+  float: left;
+  margin-right: 15px;
+}
+
+.elementsArrow .ar1 {
+  background: url(../img/blogEl1.png) no-repeat;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.elementsArrow .ar2 {
+  background: url(../img/blogEl2.png) no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  right: 5px;
+}
+
+.elementsArrow .ar3 {
+  background: url(../img/blogEl3.png) no-repeat;
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  position: relative;
+  right: 5px;
+}
+
+.postInfo .separator {
+  width: 285px;
+  height: 3px;
+  background-color: #cfd600;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.postText {
+  font-family: "GothamRegular";
+  font-size: 14px;
+  color: #5a5a5a;
+  letter-spacing: 1.5px;
+}
+
+.postMore {
+  margin-top: 40px;
+  background: url(../img/arrowBlog.png) 100px 0px no-repeat;
+  font-family: "GothamRegular";
+  font-size: 10px;
+  color: #cfd600;
+  letter-spacing: 2px;
+  padding-right: 60px;
+  display: block;
+  padding-top: 3px;
+  height: 40px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.postMore:hover {
+  background-position: 140px 0px;
+  letter-spacing: 4px;
+}
+
+.postsBlock .post.col-md-12 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #5a5a5a;
+}
+
+.postsBlock.col-md-12 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.pagination {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #5a5a5a;
+  float: left;
+  text-align: center;
+  font-family: "GothamRegular";
+  font-size: 14px;
+  color: #5a5a5a;
+  padding-top: 7px;
+  transition: .5s;
+}
+
+.pagination:hover {
+  border: 2px solid white;
+}
+
+.paginationWrap {
+  margin: 0 auto;
+  width: 280px;
+  height: 40px;
+}
+
+.paginationBlock.col-md-12 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.postInfo {
+  padding-left: 30px;
+}
+
+.postsBlockInside.postsBlock.col-md-12 {
+  margin-top: 0;
+}
+
+.postInsText {
+  font-family: "GothamLight";
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+}
+
+.paginationInside {
+  margin-top: 50px !important;
+  margin-bottom: 30px !important;
+}
+
+.planInside {
+  padding-bottom: 0 !important;
+}
+
+.socAndBack {
+  margin-bottom: 50px;
+}
+
+.socAndBack .backChoose {
+  width: 50%;
+  display: inline-block;
+}
+
+.socAndBack .socBtn {
+  display: inline-block;
+  width: 49%;
+}
+
+.socAndBack .socBtn a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  float: none;
+  margin-left: 10px;
+  border: 1px solid #5a5a5a;
+}
+
+.socAndBack .socBtn .fb {
+  background: url(../img/socFB.png) no-repeat;
+  background-position: 15px 9px;
+}
+
+.socAndBack .socBtn .fb:hover {
+  background-position: 15px -72px;
+}
+
+.socAndBack .socBtn .vk {
+  background: url(../img/socVK.png) no-repeat;
+  background-position: 10px 13px;
+}
+
+.socAndBack .socBtn .vk:hover {
+  background-position: 10px -25px;
+}
+
+.socAndBack .socBtn .tw {
+  background: url(../img/socTV.png) no-repeat;
+  background-position: 10px 11px;
+}
+
+.socAndBack .socBtn .tw:hover {
+  background-position: 10px -23px;
+}
+
+.socAndBack .socBtn .gp {
+  background: url(../img/socGP.png) no-repeat;
+  background-position: 10px 11px;
+}
+
+.socAndBack .socBtn .gp:hover {
+  background-position: 10px -22px;
+}
+
+.socBtnWr {
+  float: right;
+  position: relative;
+  top: 15px;
+}
+
+.buyOpen.active {
+  border-bottom: 2px solid transparent;
+}
+
+.buyOpen {
+  transition: .5s;
+  cursor: pointer;
+  border-bottom: 2px solid #cfd600;
+}
+
+.buyOpen:hover .buyTitle {
+  letter-spacing: 5px;
+}
+
+.buyOpen .openSlide {
+  background: url(../img/buyArrow.png) no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 25px;
+  position: relative;
+  top: 4px;
+}
+
+.buyOpen .openSlide.active {
+  background: url(../img/buyArrow.png) no-repeat;
+  background-position: 0px -55px !important;
+}
+
+.buyOpen .buyTitle {
+  transition: .5s;
+  font-family: "GothamRegular";
+  font-size: 27px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin-left: 50px;
+  width: 93%;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  border-bottom: 1px solid transparent;
+}
+
+.buyOpen .buyTitle span {
+  font-family: "GothamMedium";
+}
+
+.buyOpen .buyTitle.active {
+  border-bottom: 1px solid #5a5a5a;
+}
+
+.buySlide .buySlideText {
+  transition: .5s;
+  font-family: "GothamLight";
+  padding-left: 75px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1.3px;
+  padding-top: 40px;
+  margin-top: 0;
+  padding-bottom: 50px;
+  border-left: 2px solid #cfd600;
+  border-bottom: 2px solid #cfd600;
+}
+
+.buySlide {
+  display: none;
+}
+
+.buySlideWrapper {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.salesName {
+  font-family: "GothamLight";
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.salesName span {
+  font-family: "GothamBold";
+  color: #cfd600;
+}
+
+.salesText {
+  font-family: "GothamRegular";
+  font-size: 16px;
+  color: #5a5a5a;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+
+.salesDep .separator {
+  width: 365px;
+  height: 1px;
+  background-color: #5a5a5a;
+  display: block;
+  margin-bottom: 25px;
+  position: relative;
+  right: 10px;
+}
+
+.contactsPhone {
+  margin-top: 30px;
+}
+
+.contactsPhone .phoneIc {
+  font-family: "GothamRegular";
+  font-size: 11px;
+  color: #cfd600;
+  letter-spacing: 1.5px;
+  padding-left: 30px;
+  padding-top: 3px;
+  display: block;
+  height: 25px;
+  background: url(../img/contactsPhone.png) no-repeat;
+  margin-bottom: 10px;
+}
+
+.contactsPhone .phoneName {
+  font-family: "GothamBold";
+  font-size: 28px;
+  color: white;
+  letter-spacing: 2.5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contactsPhone .phoneName span {
+  font-family: "GothamLight";
+  font-size: 24px;
+  border-right: 1px solid white;
+  padding-right: 10px;
+  position: relative;
+  bottom: 1px;
+}
+
+.contactsPhone .separator {
+  margin-top: 20px;
+  width: 365px;
+  height: 1px;
+  background-color: #5a5a5a;
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  right: 10px;
+}
+
+.contactsLoaction {
+  margin-top: 20px;
+}
+
+.contactsLoaction .locationIc {
+  font-family: "GothamRegular";
+  font-size: 11px;
+  color: #cfd600;
+  letter-spacing: 1.5px;
+  padding-left: 30px;
+  padding-top: 3px;
+  display: block;
+  height: 25px;
+  background: url(../img/contactsLocation.png) no-repeat;
+  margin-bottom: 10px;
+}
+
+.contactsLoaction .locationName {
+  font-family: "GothamLight";
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contactsLoaction .separator {
+  margin-top: 20px;
+  width: 365px;
+  height: 1px;
+  background-color: #5a5a5a;
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  right: 10px;
+}
+
+.contactsMail {
+  margin-top: 20px;
+}
+
+.contactsMail .mailIc {
+  font-family: "GothamRegular";
+  font-size: 11px;
+  color: #cfd600;
+  letter-spacing: 1.5px;
+  padding-left: 30px;
+  padding-top: 3px;
+  display: block;
+  height: 25px;
+  background: url(../img/contactsMail.png) no-repeat;
+  margin-bottom: 10px;
+}
+
+.contactsMail .mailName {
+  font-family: "GothamLight";
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2.5px;
+}
+
+.contactWrapper.col-sm-12 {
+  margin-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 50px;
+}
+
+.answerBlock {
+  background: url(../img/contactsFormL.png) left center, url(../img/contactsFormR.png) right center;
+  background-repeat: no-repeat;
+  height: 670px;
+  width: 506px;
+}
+
+.answerBlock .send {
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border: 1px solid white;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "GothamRegular";
+  font-size: 11px;
+  color: white;
+  padding-top: 15px;
+  margin-top: 60px;
+  transition: .5s;
+}
+
+.answerBlock .send:hover {
+  letter-spacing: 3px;
+  border: 1px solid #5a5a5a;
+}
+
+.answerBlock .send:focus {
+  outline: none;
+}
+
+.answerBlock .answerName {
+  padding-top: 80px;
+  text-align: center;
+  font-family: "GothamLight";
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
+
+.answerBlock .answerName span {
+  font-family: "GothamMedium";
+}
+
+.answerBlock .contactsInput {
+  width: 285px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.answerBlock .contactsInput p {
+  font-family: "GothamRegular";
+  font-size: 11px;
+  color: #cfd600;
+  letter-spacing: 1.5px;
+}
+
+.answerBlock .contactsInput input {
+  background-color: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #cfd600;
+  padding-left: 10px;
+  font-family: "GothamLight";
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.answerBlock .contactsInput textarea {
+  background-color: transparent;
+  width: 100%;
+  border-left: 1px solid #cfd600;
+  border-right: 1px solid #cfd600;
+  border-bottom: 1px solid #cfd600;
+  border-top: 0;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  height: 75px;
+}
+
+.answerBlock .contactsInput textarea:focus {
+  outline: 0;
+}
+
+.error404 h2 {
+  font-family: "GothamLight";
+  font-size: 170px;
+  color: white;
+  display: inline-block;
+  line-height: 210px;
+  margin-bottom: 0;
+}
+
+.error404 span {
+  font-family: "GothamMedium";
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: inline-block;
+  position: relative;
+  bottom: 45px;
+  right: 10px;
+}
+
+.error404 .separator {
+  width: 410px;
+  height: 2px;
+  background-color: #cfd600;
+}
+
+.errorText p {
+  font-family: "GothamLight";
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  right: 25px;
+}
+
+.errorBlock {
+  width: 435px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+}
+
+.myHomeBlock {
+  width: 360px;
+  height: 390px;
+  background: url(../img/aboutBorder.png) no-repeat;
+  cursor: pointer;
+}
+
+.myHomeBlock h2 {
+  margin-top: 0;
+  font-family: "GothamBlack";
+  font-size: 72px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 65px;
+  letter-spacing: 2px;
+  padding-top: 70px;
+  margin-bottom: 25px;
+}
+
+.myHomeBlock .separator {
+  position: relative;
+  right: 30px;
+  display: block;
+  width: 285px;
+  height: 4px;
+  background-color: #cfd600;
+}
+
+.myHomeBlock p {
+  font-family: "GothamRegular";
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.myHomeText p {
+  font-family: "GothamLight";
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+
+.aboutHome.col-sm-12 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#owl-demo2 .item {
+  margin: 3px;
+}
+
+#owl-demo2 .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.aboutCarousel .owl-theme .owl-controls .owl-buttons div {
+  width: 35px;
+  height: 60px;
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid #5a5a5a;
+}
+
+.aboutCarousel .owl-theme .owl-controls .owl-buttons .owl-prev {
+  background: url(../img/carouselLeft.png) no-repeat;
+  background-position: 5px 20px;
+  float: left;
+  position: relative;
+  bottom: 140px;
+  right: 60px;
+}
+
+.aboutCarousel .owl-theme .owl-controls .owl-buttons .owl-prev:hover {
+  background-position: -52px 20px;
+}
+
+.aboutCarousel .owl-theme .owl-controls .owl-buttons .owl-next {
+  background: url(../img/carouselRight.png) no-repeat;
+  background-position: 5px 20px;
+  float: right;
+  position: relative;
+  bottom: 140px;
+  left: 60px;
+}
+
+.aboutCarousel .owl-theme .owl-controls .owl-buttons .owl-next:hover {
+  background-position: -52px 20px;
+}
+
+.showWrap {
+  transition: .5s;
+  opacity: 0;
+  background: url(../img/carouselPlus.png) center no-repeat;
+  width: 98%;
+  height: 97%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#owl-demo2 .item:hover .showWrap {
+  opacity: 1;
+}
+
+.aboutCarousel.col-sm-12 {
+  padding-left: 75px;
+  padding-right: 75px;
+  margin-bottom: 50px;
+}
+
+.slideItems.col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 75px;
+}
+
+.foldedIcon {
+  background: url(../img/aboutIc1.png) no-repeat;
+  display: inline-block;
+  width: 120px;
+  height: 160px;
+  float: left;
+}
+
+.foldBtn {
+  background: url(../img/buyArrow.png) no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 25px;
+  position: relative;
+  top: 4px;
+}
+
+.foldBtn.active {
+  background: url(../img/buyArrow.png) no-repeat;
+  background-position: 0px -55px !important;
+}
+
+.foldName {
+  transition: .5s;
+  font-family: "GothamRegular";
+  font-size: 27px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.foldOpenBox {
+  transition: 1s;
+  padding-top: 20px;
+  cursor: pointer;
+  margin-left: 30px;
+  width: 87%;
+  display: inline-block;
+  border-bottom: 2px solid #cfd600;
+}
+
+.foldOpenBox:hover .foldName {
+  padding-left: 40px;
+  letter-spacing: 3px;
+}
+
+.foldOpenBox.active {
+  border-bottom: 2px solid #5a5a5a !important;
+}
+
+.hiddenItems {
+  display: none;
+  margin-left: 150px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #cfd600;
+}
+
+.hiddenItems p {
+  font-family: "GothamLight";
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.foldedItems {
+  margin-bottom: 75px;
+}
+
+.foldedIcon2.foldedIcon {
+  background: url(../img/aboutIc2.png) no-repeat;
+}
+
+.foldedIcon3.foldedIcon {
+  background: url(../img/aboutIc3.png) no-repeat;
+}
+
+.foldedIcon4.foldedIcon {
+  background: url(../img/aboutIc4.png) no-repeat;
+}
+
+.mobileCall {
+  height: 160px;
+  width: 125px;
+  display: none;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+}
+
+.mobileCall a {
+  height: 110px;
+  width: 90px;
+  display: block;
+  position: fixed;
+  right: 0;
+  background: url(../img/phoneMob.png) no-repeat;
+  background-size: contain;
+  bottom: 0;
+}
+
+#map1 {
+  position: relative;
+}
+
+#map2 {
+  position: relative;
+}

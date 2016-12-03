@@ -1,0 +1,374 @@
+
+#dm{
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Center wrapper */
+.dropHeader {
+    -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 1.8s;
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1.8s;
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1.8s;
+}
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(-580px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes dropHeader {
+    0% {
+      -webkit-transform: translateY(-580px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+    }
+  }
+  @keyframes dropHeader {
+    0% {
+      transform: translateY(-580px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+/* columns */
+
+.clear{clear: both;}
+
+/* double modal */
+
+.doubleModal {
+  cursor: pointer;
+  display: block;
+  width: 320px;
+  height: 90px;
+  transition: 1.2s;
+  margin: 40px auto 20px auto;
+}
+
+.doubleModal:hover .edgeLeft, .doubleModal:focus .edgeLeft, .doubleModal:active .edgeLeft {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.doubleModal:hover .edgeRight, .doubleModal:focus .edgeRight, .doubleModal:active .edgeRight {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.doubleModal:hover .content, .doubleModal:focus .content, .doubleModal:active .content {
+  border-top: 13px solid #cfd600;
+  border-bottom: 13px solid #cfd600;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.doubleModal .edgeLeft {
+  transition: 1.2s;
+  height: 90px;
+  width: 30px;
+  border-left: 13px solid #cfd600;
+  border-top: 13px solid #cfd600;
+  border-bottom: 13px solid #cfd600;
+  display: inline-block;
+  float: left;
+}
+
+.doubleModal .edgeRight {
+  transition: 1.2s;
+  height: 90px;
+  width: 30px;
+  border-right: 13px solid #cfd600;
+  border-top: 13px solid #cfd600;
+  border-bottom: 13px solid #cfd600;
+  display: inline-block;
+  float: left;
+}
+
+.doubleModal .content {
+  transition: 1.2s;
+  height: 90px;
+  width: 230px;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  display: inline-block;
+  float: left;
+  opacity: 1;
+}
+
+.doubleModal button {
+  display: block;
+  font-family: "GothamBlack";
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  width:100%;
+  background:transparent;
+  border:none;
+  outline:none !important;
+  padding: 4px 0px;
+}
+
+.doubleModal button span {
+  font-family: "GothamRegular";
+  font-size: 24px;
+}
+
+.nightFade{display:none;position:fixed;z-index:999998;min-width:100%;min-height:100%;background:url(../modal/img/nightFadePixel.png) left top repeat;left:0px;top:0px;}
+
+#dm{display:none;}
+#dm .dmLeft{width:363px;height:671px;background:url(../modal/img/dmLeft.png)left top no-repeat;position:absolute;z-index:999999;left:-1000px; top:50%; margin-left:-265px; margin-top:-335px;}
+#dm .dmRight{position:relative;width:480px;min-height:602px;background:#575656;position:absolute;z-index:1000000;right:-1000px; top:50%; margin-right:-250px; margin-top:-300px;}
+#dm .dmRight .close{position:absolute;width:50px;height:40px;background: #cfd600 url(../modal/img/close.png) center no-repeat;top:-20px;right:-20px;z-index: 100;opacity:1; border: 0;}
+#dm .dmRight .close:hover{opacity:0.7;}
+#dm .formHeader{position:relative;overflow:hidden;height:120px;padding:10px 20px 10px 80px;background: #3b3b3a;color:#FFF;}
+#dm .formHeader span{position: absolute;}
+#dm .formHeader .el-1{height: 35px; width: 35px; background: url(../modal/img/dm-el-1.png) left top no-repeat;left: 0px;top: 45px;z-index: 1;}
+#dm .formHeader .el-2{height: 35px; width: 34px; background: url(../modal/img/dm-el-2.png) left top no-repeat;left: 32px;top: 45px;z-index: 2;}
+#dm .formHeader .el-3{height: 35px; width: 42px; background: url(../modal/img/dm-el-3.png) left top no-repeat;left: 63px;top: 45px;z-index: 3;}
+#dm .formHeader h3{padding-left: 50px;color: #ffffff;font-family: "GothamBold";font-size: 28px;text-transform: uppercase;letter-spacing: 1.5px;line-height: 32px;vertical-align: middle;padding-top: 0px;}
+#dm .formHeader h3 span{font-family: "GothamLight";color: #cfd600;}
+#dm .dmRight .form{padding: 50px 90px;}
+#dm .dmRight .form form{}
+#dm .dmRight .form form label{padding: 10px 0px;}
+#dm .dmRight .form form label span{color:#cfd600;font-size: 12px;display:block;font-family: 'Myriad Pro';letter-spacing: 1.5px; font-weight: normal; padding-top: 15px;}
+#dm .dmRight .form form label input{width: 300px; height: 40px; padding: 5px 20px; border:none; border-bottom: 2px solid #cfd600;color:#FFF;background: #575656;font-family: 'Myriad Pro';letter-spacing: 1.5px; font-weight: normal; font-family: "GothamLight"; font-size: 16px;}
+
+.submitWrap {
+  transition: 1s;
+  width: 280px;
+  height: 65px;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.submitWrap:hover {
+  background-color: white;
+}
+
+.submitWrap button{  
+  width: 265px;
+  height: 45px;
+  background-color: #cfd600;
+  border: 0;
+  margin-top: 8px;
+  font-family: "GothamMedium";
+  text-transform: uppercase;
+  color: #575756;
+  letter-spacing: 2px;
+  transition: 1s;
+}
+
+.submitWrap button:hover {
+  letter-spacing: 1px;
+}
+
+#dm .dmRight .form form button{outline:none !important;}
+#dm .dmRight .form form .response{    
+    border: 0;
+    margin-top: 18px;
+    font-family: GothamLight;
+    text-transform: uppercase;
+    color: #FFF;
+    letter-spacing: 2px;
+    transition: 1s;
+    text-align: center;
+    font-weight: normal;}
+
+.anime, .anime *{-webkit-transition: 0.8s;
+ -moz-transition: 0.8s;
+ -o-transition: 0.8s;
+ transition: 0.8s;
+ }
+ .fastAnime, .fastAnime *{-webkit-transition: 0.2s;
+ -moz-transition: 0.2s;
+ -o-transition: 0.2s;
+ transition: 0.2s;
+ }
+  .middleAnime, .middleAnime *{-webkit-transition: 0.4s;
+ -moz-transition: 0.4s;
+ -o-transition: 0.4s;
+ transition: 0.4s;
+ }
+  .normalAnime, .normalAnime *{-webkit-transition: 0.6s;
+ -moz-transition: 0.6s;
+ -o-transition: 0.6s;
+ transition: 0.6s;
+ }
+
+.box_wrap{
+  overflow: hidden;
+}
+
+/* media */
+
+@media only screen and (max-width : 736px) {
+  /* Promotion info */
+
+  /* Promotion moto */
+
+  .promoutionMotto {
+    height: 450px;
+    width: 320px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+
+  .promoutionInfo {
+    width: 320px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin: 0 auto;
+    margin-top: -50px;
+  }
+  .promoutionMotto h1 {
+    font-size: 62px;
+  }
+  .promoutionMotto .separator {
+    width: 185px;
+  }
+  .contacts .phone h4 {
+    font-size: 26px;
+  }
+  .contacts .email p {
+    font-size: 18px;
+  }
+#dm .dmLeft {
+    width: 263px;
+    height: 475px;
+    position: absolute;
+    z-index: 999999;
+    left: -2000px;
+    top: 80%;
+    margin-left: -150px;
+    margin-top: -265px;
+    background-size: contain;
+}
+
+#dm .dmRight {
+    position: relative;
+    width: 258px;
+    min-height: 302px;
+    background: #575656;
+    position: absolute;
+    z-index: 1000000;
+    right: -2000px;
+    top: 80%;
+    margin-right: -133px;
+    margin-top: -241px;
+}
+
+#dm .dmRight .close {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    opacity: 1;
+}
+
+#dm .formHeader {
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    padding: 5px 20px 5px 65px;
+    background: #3b3b3a;
+    color: #FFF;
+}
+
+#dm .formHeader h3 {
+    padding-left: 50px;
+    color: #ffffff;
+    font-family: "GothamBold";
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    vertical-align: middle;
+    padding-top: 19px;
+}
+
+#dm .dmRight .form {
+    padding: 28px 10px 29px 25px;
+}
+
+#dm .dmRight .form form label {
+    padding: 10px 0px;
+}
+
+#dm .dmRight .form form label span {
+    color: #cfd600;
+    font-size: 12px;
+    padding-top: 15px !important;
+    display: block;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+}
+
+#dm .dmRight .form form label input {
+    width: 210px;
+    height: 30px;
+    padding: 5px 20px;
+    border: none;
+    border-bottom: 2px solid #cfd600;
+    color: #FFF;
+    background: #575656;
+    font-family: 'Myriad Pro';
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    font-family: "GothamLight";
+    font-size: 16px;
+}
+#dm {
+    height: 70%;
+}
+
+.submitWrap {
+    transition: 1s;
+    width: 200px;
+    height: 65px;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+
+.submitWrap button {
+    width: 185px;
+    height: 45px;
+    background-color: #cfd600;
+    border: 0;
+    margin-top: 8px;
+    font-family: "GothamMedium";
+    text-transform: uppercase;
+    color: #575756;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+}
