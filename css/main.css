@@ -1,6 +1,9 @@
 a:focus {
   outline: none;
 }
+a:hover{
+  text-decoration: none;
+}
 
 *:focus {
   outline: none !important;
