@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acbd71e0-3a55-4400-869d-3a27b6f6769f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contacts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newsInside.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/planirovka1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/planirovkaShow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/planirovkaShowv2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
     </list>
     <ignored path="jkProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +36,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1652">
+            <state relative-caret-position="-6020">
               <caret line="118" column="57" selection-start-line="118" selection-start-column="57" selection-end-line="118" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="1067" column="9" selection-start-line="1067" selection-start-column="9" selection-end-line="1067" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -79,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planirovkaShowv2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="planirovkaShowv2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/planirovkaShowv2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
+            <state relative-caret-position="-736">
               <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -135,7 +137,6 @@
         <option value="$PROJECT_DIR$/planirovka1.php" />
         <option value="$PROJECT_DIR$/planirovkaShow.php" />
         <option value="$PROJECT_DIR$/planirovkaShowv2.php" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/libs/bootstrap/css/bootstrap-grid.min.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/buy.html" />
@@ -149,6 +150,7 @@
         <option value="$PROJECT_DIR$/planirovka1.html" />
         <option value="$PROJECT_DIR$/planirovkaShow.html" />
         <option value="$PROJECT_DIR$/planirovkaShowv2.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -271,6 +273,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wladdy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wladdy" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -364,12 +380,12 @@
       <workItem from="1480767337884" duration="552000" />
       <workItem from="1480768092773" duration="1963000" />
       <workItem from="1480797874500" duration="1797000" />
-      <workItem from="1480879110084" duration="2533000" />
+      <workItem from="1480879110084" duration="2777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163826000" />
+    <option name="totallyTimeSpent" value="164070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -604,14 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -640,14 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1652">
-          <caret line="118" column="57" selection-start-line="118" selection-start-column="57" selection-end-line="118" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -822,13 +822,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/planirovkaShowv2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
+        <state relative-caret-position="-736">
           <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6020">
+          <caret line="118" column="57" selection-start-line="118" selection-start-column="57" selection-end-line="118" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="1067" column="9" selection-start-line="1067" selection-start-column="9" selection-end-line="1067" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
