@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <?php
+    define("RS","/jkProject");
+    ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ЖК "Соната" | Свой дом</title>
+    <meta name="author" content="Alvaro Trigo Lopez"/>
+    <meta name="description" content="fullPage full-screen navigation and sections control menu."/>
+    <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots"/>
+    <meta name="Resource-type" content="Document"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="libs/fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <!-- Add Button helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="libs/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <link rel="stylesheet" type="text/css" href="libs/fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link rel="stylesheet" type="text/css" href="libs/fullPage/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="libs/fullPage/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="libs/fullPage/examples.css" />
+    <link rel="stylesheet" href="modal/main.css">
+    <link rel="stylesheet" href="modal/fonts.css">
+    <!--parallax-->
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link media="screen" href="css/parallax.css" type="text/css" rel="stylesheet" />
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="libs/owl.carousel/owl-carousel/owl.carousel.css">
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="libs/owl.carousel/owl-carousel/owl.theme.css">
+</head>
+<body>
+<nav class="mainMobileMenu">
+    <a href="#" class="homeButton"></a>
+    <div class="menuOpen">
+        <span class="menuTitle">Меню</span>
+        <a href="#" class="openMenuBtn"></a>
+    </div>
+    <div class="overflowMobile">
+        <div class="dropMobileMenu">
+            <div class="links">
+                <div class="menuClose">
+                    <span class="menuTitle">Меню</span>
+                    <a href="#" class="closeMenuBtn"></a>
+                </div>
+                <div class="mobileNavig">
+                    <a href="about.html" class="dropNav">о комплексе</a>
+                    <a href="planirovka1.html" class="dropNav">Планировки</a>
+                    <a href="news.html" class="dropNav">Новости</a>
+                    <a href="contacts.html" class="dropNav">Контакты</a>
+                    <a href="buy.html" class="dropNav">Условия покупки</a>
+                </div>
+                <div class="socBut">
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="tw"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="headerFixed">
+    <div class="headerBord">
+        <div class="headerLeft">
+            <div class="headerLocation">
+                <p>С. Белогородка</p>
+            </div>
+            <div class="headerPhone">
+                <p><span>098</span> 900 9004</p>
+            </div>
+        </div>
+        <a href="/index.php" class="headerCenter">
+
+        </a>
+        <div class="headerRight">
+            <div class="leftPart">
+                <div class="callbackBlock">
+                    <a onclick="openDoubleModal();">
+                        <div class="callback">
+                            <p>Обратный <br />Звонок</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="socBut">
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="tw"></a>
+                </div>
+            </div>
+            <div class="dropDownOpen" id="dropOpen">
+                <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible">
+                    <svg width="1000px" height="1000px">
+                        <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                        <path id="pathB" d="M 300 500 L 700 500"></path>
+                        <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                    </svg>
+                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                </div><!-- menu-icon-wrapper -->
+                <div id="dummy" class="dummy">
+                    <div class="dummy__item"><a href="about.html">о комплексе</a></div>
+                    <div class="dummy__item"><a href="planirovka1.html">планировки</a></div>
+                    <div class="dummy__item"><a href="news.html">новости</a></div>
+                    <div class="dummy__item"><a href="contacts.html">контакты</a></div>
+                    <div class="dummy__item"><a href="buy.html">Условия покупки</a></div>
+                </div><!-- /dummy -->
+                <!-- Related demos -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobileCall">
+    <a onclick="openDoubleModal();"></a>
+</div>
+<div class="planHead">
+    <div class="container">
+        <div class="row">
+            <div class="planTitleWrapper">
+                <h2 class="planTitleText">Планировки</h2>
+                <span class="separator"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="planChoose planShow">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="backChoose">
+                    <a href="planirovka1.php"><span></span>к выбору квартиры</a>
+                </div>
+                <div class="homeShowInfo">
+                    <p class="kvNum">Дом #3</p>
+                    <div class="showPlanWrap">
+                        <p class="homeShowPlN">План <span># 1.2</span></p>
+                        <h2>Просмотр<br> <span>квартиры</span></h2>
+                        <span class="separator"></span>
+                        <div class="col-sm-8 col-md-6 col-xs-6 listWithOutNum">
+                            <ul>
+                                <li>Общая площадь</li>
+                                <li>Жилая площадь</li>
+                                <li>Антресоль</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 col-md-6">
+                            <ul>
+                                <li>85 <span>м<span class="sqr2">2</span></span></li>
+                                <li>51 <span>м<span class="sqr2">2</span></li>
+                                <li>20 <span>м<span class="sqr2">2</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-8">
+                            <span class="separatorGrey"></span>
+                            <ul class="listWithNum">
+                                <li id="list1"> Холл</li>
+                                <li id="list2"> Коридор</li>
+                                <li id="list3"> Гостинная</li>
+                                <li id="list4"> Кухня-студия</li>
+                                <li id="list5"> Ванная комната</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-4">
+                            <ul class="listMeters">
+                                <li id="numList1"><b class="meters">4,41</b> <span>м<span class="sqr2">2</span></span></li>
+                                <li id="numList2"><b class="meters">8</b> <span>м<span class="sqr2">2</span></span></li>
+                                <li id="numList3"><b class="meters">19</b> <span>м<span class="sqr2">2</span></span></li>
+                                <li id="numList4"><b class="meters">10,6</b> <span>м<span class="sqr2">2</span></span></li>
+                                <li id="numList5"><b class="meters">4,2</b> <span>м<span class="sqr2">2</span></span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="floorSwitch">
+                    <span>Этаж</span>
+                    <a class="floor active" id="firstFloor2">1</a>
+                    <a class="floor" id="secondFloor2">2</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="firstFloorMap">
+                    <img src="img/map1_2.png" alt="" id="map2">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="jkFoot">© 2016 <span>ЖК Соната.</span> ВСЕ ПРАВА ЗАЩИЩЕНЫ </p>
+            </div>
+            <div class="col-sm-6">
+                <a href="#" class="kamStudio">Сделано в <span>KAM STUDIO</span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<style type="text/css">#hellopreloader > p {
+    display: none;
+}
+
+#hellopreloader_preload {
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: #22313F url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;
+    background-size: 41px;
+}</style>
+<div id="hellopreloader">
+    <div id="hellopreloader_preload"></div>
+</div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");
+function fadeOutnojquery(el) {
+    el.style.opacity = 1;
+    var interhellopreloader = setInterval(function () {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) {
+            clearInterval(interhellopreloader);
+            hellopreloader.style.display = "none";
+        }
+    }, 16);
+}
+window.onload = function () {
+    setTimeout(function () {
+        fadeOutnojquery(hellopreloader);
+    }, 400);
+};
+</script>
+<script
+        src="https://code.jquery.com/jquery-1.9.1.js"
+        integrity="sha256-e9gNBsAcA0DBuRWbm0oZfbiCyhjLrI6bmqAl5o+ZjUA="
+        crossorigin="anonymous"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/animate/animate-css.js"></script>
+<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+<script src="js/segment.min.js"></script>
+<script src="js/ease.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/segment.min.js"></script>
+<script src="js/ease.min.js"></script>
+<script src="libs/modernizr/modernizr.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="libs/fullPage/vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="libs/fullPage/jquery.fullPage.js"></script>
+<script type="text/javascript" src="libs/fullPage/examples.js"></script>
+<script type="text/javascript" src="js/leftNav.js"></script>
+<!-- Include js plugin -->
+<script src="libs/owl.carousel/owl-carousel/owl.carousel.js"></script>
+<script src="js/parallax.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="libs/fancyBox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqj40ibrbZgrrofyvoSHgN2dc6XuDCrPI&language=ru"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="libs/fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="libs/fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="libs/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<!-- Add Media helper (this is optional) -->
+<script type="text/javascript" src="libs/fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+</script>
+<script>
+    $(document).ready(function() {
+
+        $("#owl-demo2").owlCarousel({
+
+
+            navigation: true,
+            autoPlay: 2000,
+            navigationText: false,
+            pagination: false,
+            items : 4,
+            itemsDesktop : [1199,3],
+            itemsDesktopSmall : [979,3]
+
+        });
+
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            sectionsColor: ['#fffff', '#fffff', '#fffff'],
+            anchors: ['main', 'map', 'dignity', 'developer', 'share'],
+            menu: '#menu',
+            loopTop: true,
+            loopBottom: true
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true
+
+            // "singleItem:true" is a shortcut for:
+            // items : 1,
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+
+        });
+
+    });
+</script>
+<script src="js/planirovkaEffect.js"></script>
+<!--modal-->
+<!-- Double Modal -->
+<div id="dm" class="anime">
+    <div class="dmLeft"></div>
+    <div class="dmRight">
+        <button class="close" onClick="closeDoubleModal();"></button>
+        <div class="formHeader">
+            <span class="el-1 fastAnime"></span>
+            <span class="el-2 middleAnime"></span>
+            <span class="el-3 normalAnime"></span>
+            <h3>Записаться <br/> <span>на просмотр</span></h3>
+        </div>
+        <div class="form">
+            <form name="contact-form" id="contact-form" action="#" method="POST">
+                <input type="hidden" name="action" value="contact" />
+                <label><span>Ваше имя</span>
+                    <input name="name" id="dm-name" />
+                </label>
+                <label><span>Ваш телефон</span>
+                    <input class="phone_number" name="phone" id="dm-phone" placeholder="+38(090)000-00-00" />
+                </label>
+                <div class="submitWrap">
+                    <button type="button" name="submit" onclick="sendContactForm();">ОТПРАВИТЬ</button>
+                </div>
+                <div class="response"></div>
+            </form>
+        </div>
+    </div>
+    <div class="nightFade" onClick="closeDoubleModal();"></div>
+</div>
+<!-- Scroll js -->
+<script type="text/javascript" language="javascript" src="modal/js/jquery.scrollTo.min.js"></script>
+<!-- jQuery inputmask -->
+<script type="text/javascript" src="modal/js/jquery.inputmask.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".phone_number").inputmask({mask: "+38(099)999-99-99"});
+    });
+    function openDoubleModal(){
+        $('.nightFade').fadeIn(300);
+
+        $('#dm').show(0);
+
+        scrollToTagID('promoutionMotto');
+
+        $('#dm .dmLeft').css('left','50%');
+        $('#dm .dmRight').css('right','50%');
+
+        setTimeout(function(){
+            $('#dm .formHeader .el-1').css('left','0px');
+            $('#dm .formHeader .el-2').css('left','32px');
+            $('#dm .formHeader .el-3').css('left','63px');
+            $('#dm').css('position','fixed');
+        },800);
+    }
+    function closeDoubleModal(){
+        $('#dm').hide(200);
+
+        $('.nightFade').fadeOut(500);
+
+        $('#dm .formHeader .el-1').css('left','-1000px');
+        $('#dm .formHeader .el-2').css('left','-1000px');
+        $('#dm .formHeader .el-3').css('left','-1000px');
+
+        $('#dm .dmLeft').css('left','-1000px');
+        $('#dm .dmRight').css('right','-1000px');
+        setTimeout(function(){
+            //$('#dm').hide(0);
+            $('#dm').css('position','fixed');
+        },800);
+    }
+    // Scroll to Top
+
+    function scrollToTop(){
+        $('body,html').stop().animate({scrollTop:0},400);
+    }
+
+    // Scroll to ID
+
+    function scrollToTagID(tagID){
+        $('body,html').scrollTo(document.getElementById(tagID), 400);
+    }
+    // Contact form
+
+    function sendContactForm(){
+        $('#contact-form .response').html("Обработка...");
+        $.post("contact-heandler.php",$('#contact-form').serialize(),function(data,status){
+            if(status=='success'){
+                $('#contact-form .response').html(data.message);
+                if(data.status=='success'){
+                    $('form#contact-form')[0].reset();
+                }
+            }
+        },"json");
+    }
+</script>
+</body>
+</html>
